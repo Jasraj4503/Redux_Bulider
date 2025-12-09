@@ -1,0 +1,39 @@
+{
+  "genre": [
+    {
+      "id": "5c8d",
+      "title": "comedy",
+      "status": "1"
+    },
+    {
+      "id": "d78b",
+      "title": "Horror",
+      "status": "2"
+    },
+    {
+      "id": "40e5",
+      "title": "Thriller",
+      "status": "1"
+    }
+  ],
+  "movies": [
+    {
+      "id": "1af2",
+      "poster": "https://i.etsystatic.com/37166133/r/il/60f034/4087791906/il_570xN.4087791906_jcbj.jpg",
+      "title": "AVENGERS INFINITY WAR",
+      "year": "2017-04-25",
+      "genre_cat": "40e5",
+      "rating": "4.8",
+      "description": "Avengers: Infinity War is a massive MCU crossover where Earth's heroes, from Iron Man and Captain America to the Guardians of the Galaxy, unite to stop the cosmic tyrant Thanos from collecting all six Infinity Stones (Space, Mind, Reality, Power, Soul, Time) to wipe out half of all life in the universe. "
+    },
+    {
+      "id": "0d02",
+      "poster": "https://i.pinimg.com/736x/59/51/d8/5951d8c40e27989167c9adb14567fb36.jpg",
+      "title": "IRON MAN",
+      "year": "2008-05-02",
+      "genre_cat": "5c8d",
+      "rating": "4",
+      "description": "Iron Man' Technique Could Be Key to Future of Materials ...Iron Man, also known as Tony Stark, is a genius billionaire inventor from Marvel Comics who uses a high-tech, armored suit to fight crime and protect the world."
+    }
+  ]
+}

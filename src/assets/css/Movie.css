@@ -1,0 +1,39 @@
+.movie-card {
+  transition: 0.3s ease-in-out;
+  background: #ffffff;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.movie-img-box {
+  position: relative;
+}
+
+.movie-img {
+  height: 45  0px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.year-badge {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: #0d6efd;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.rating svg {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.card-body .btn {
+  min-width: 80px;
+}
