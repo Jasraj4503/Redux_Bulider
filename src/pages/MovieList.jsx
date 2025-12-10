@@ -37,6 +37,11 @@ const Home = () => {
   };
 
 
+  const getGenreCategory = (catId) => {
+    const name =  genres.filter(c => c.id == catId);
+    return name.length > 0  && name[0].title;
+  }
+
   function editMovie(id) {
     navigate(`/add-movie/${id}`)
   }
@@ -83,10 +88,10 @@ const Home = () => {
                     </div>
 
                     {/* Genre */}
-                    <span className="badge bg-primary mb-2">{m.genre_cat}</span>
+                    <span className="badge bg-primary mb-2">{getGenreCategory(m.genre_cat)}</span>
 
                     {/* Description */}
-                    <p className="text-muted small">{m.description}</p>
+                    <p className="text-muted small">{m.description.substring(0, 100)}...</p>
 
                     {/* Buttons */}
                     <div className="d-flex justify-content-between">

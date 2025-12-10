@@ -63,7 +63,7 @@ const MovieForm = () => {
                 <label className="form-label">Movie Title</label>
                 <input
                   type="text"
-                  {...register('title')}
+                  {...register('title', { required: true })}
                   className="form-control"
                   placeholder="Enter movie title"
                    onInput={(e) => e.target.value = e.target.value.toUpperCase()}
@@ -74,7 +74,7 @@ const MovieForm = () => {
                 <label className="form-label">Release Year</label>
                 <input
                   type="date"
-                  {...register('year')}
+                  {...register('year', { required: true })}
                   className="form-control"
                   placeholder="Enter release year"
                 />
@@ -82,7 +82,7 @@ const MovieForm = () => {
 
               <div className="mt-3">
                 <label className="form-label">Genre</label>
-                <select type="text" {...register('genre_cat')} className="form-select" placeholder="Enter genre" >
+                <select type="text" {...register('genre_cat',{ required: true })} className="form-select" placeholder="Enter genre" >
                   <option value="" >Select Genre</option>
                   {genres.map((m) => (<option key={m.id} value={m.id}>{m.title}</option>))}
                 </select>
@@ -93,7 +93,7 @@ const MovieForm = () => {
                 <input
                   type="number"
                   step="0.1"
-                  {...register('rating')}
+                  {...register('rating',{ required: true })}
                   className="form-control"
                   placeholder="Enter rating (0 to 10)"
                 />
@@ -102,7 +102,7 @@ const MovieForm = () => {
               <div className="mt-3">
                 <label className="form-label">Description</label>
                 <textarea
-                  {...register('description')}
+                  {...register('description',{ required: true })}
                   className="form-control"
                   placeholder="Enter movie description"
                   rows="3"
